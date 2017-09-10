@@ -21,9 +21,12 @@ def deliver_image():
 	return new_name
 
 def push_to_github():
-	subprocess.call(["git", "add", "."])
-	subprocess.call(["git", "commit", "-m", "新增一张图片"])
-	subprocess.call(["git", "push", "origin", "master"])
+	subprocess.call("git add .", shell = True)
+	subprocess.call("git commit -m 新增一张图片", shell = True)
+	subprocess.call("git push origin master", shell = True)
 
 if __name__ == "__main__":
-	print(deliver_image())
+	pic_name = deliver_image()
+	if pic_name != False:
+		push_to_github()
+		print("https://raw.githubusercontent.com/gzm1997/gallery/master/" + pic_name)
