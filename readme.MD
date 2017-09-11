@@ -5,7 +5,12 @@
 
 ----------
 
-## 描述 ##
+
+[github地址][1]
+
+----------
+
+## 需求 ##
 
 因为我经常在**markdown**书写过程中需要获取我一些图片或者截图的在线url，但是有些图片云盘需要收费或者要自己手动上传不方便。自己上传github固然可以，但是还是不够方便，所以写了个小脚本。
 
@@ -14,16 +19,25 @@
 
 ## demo ##
 
-![demo][1]
+![demo][2]
 
 
 ----------
+
+## 需要 ##
+
+ 1. python
+ 2. git
+ 3. python依赖PIL
+
+----------
+
 
 ## 用法 ##
 
  1. 一开始需要把配图或者截图保存到本地(**本地的git仓库中的raw文件夹**)，不需要修改文件名。
 
-![文件结构][2]
+![文件结构][3]
 
 
 ----------
@@ -31,7 +45,7 @@
 
  2. 点击运行 **run.cmd** 文件
 
-![run.cmd][3] 
+![run.cmd][4] 
 
 可以看见后面会输出这张图片的url，最后会提示你确认退出，其实这个确认退出只是为了**造成阻塞**，不然这个cmd文件运行完就自动关闭窗口不留时间给你复制url了。
 
@@ -85,6 +99,9 @@ if __name__ == "__main__":
 ```
 python add.py
 ```
-  [1]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/demo.gif
-  [2]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/18.png
-  [3]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/20.png
+
+
+  [1]: https://github.com/gzm1997/gallery
+  [2]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/demo.gif
+  [3]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/18.png
+  [4]: https://raw.githubusercontent.com/gzm1997/gallery/master/mature/20.png
