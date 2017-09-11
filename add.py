@@ -12,7 +12,7 @@ def deliver_image():
 	f.close()
 	old_name = "raw/" + raw[0]
 	image_to_add = Image.open(old_name)
-	new_name = str(num + 1) + raw[raw[0].find("."):]
+	new_name = str(num + 1) + ".png"
 	image_to_add.save("mature/" + new_name)
 	f = open("num.txt", "wb")
 	f.write(str(num + 1).encode("utf-8"))
