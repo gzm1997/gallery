@@ -31,4 +31,4 @@ if __name__ == "__main__":
 		push_to_github()
 		print("图片的url:")
 		print("https://raw.githubusercontent.com/gzm1997/gallery/master/mature/" + pic_name)
-		stop = input("确认退出:")
+		#stop = input("确认退出:")
